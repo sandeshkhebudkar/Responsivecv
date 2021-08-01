@@ -10,6 +10,10 @@ function open(){
         xyz.style.display="none";
     }
 }
+function loading(){
+    var divblock=document.getElementById("form");
+    divblock.style.display="none";
+}
 
 function cover(props) {
     return (
@@ -24,7 +28,7 @@ function cover(props) {
                     <p>I'm Sandesh Khebudkar</p>
                     <p>Web Developer & Mobile Application Developer</p>
                 </div>
-                <div id="form">
+                <div onLoad={loading} id="form">
                 <form>
                     <div className="mb-3">
                         <label for="exampleInputEmail1" className="form-label">Email address</label>
